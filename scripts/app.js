@@ -35,7 +35,6 @@ cityForm.addEventListener('submit', e => {
     if (!city) {
         return;
     }
-    console.log('hello')
     cityForm.reset();
     updateCity(city)
         .then(data => updateUI(data))
